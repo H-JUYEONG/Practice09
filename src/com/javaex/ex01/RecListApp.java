@@ -34,8 +34,7 @@ public class RecListApp {
 
 		System.out.println("#4번째 사각형(4, 5)-->(9, 5)로 width 값 변경======================");
 		// 사각형(2,2) 수정 코드 작성
-		Rectangle rect = rList.get(2);
-		rect.setWidth(9);
+		r04.setWidth(9);
 
 		// 리스트 모두를 draw하는 메소드 실행
 		listAllDraw(rList);
@@ -43,7 +42,7 @@ public class RecListApp {
 		System.out.println("#모든 사각형의 넓이 합 출력=======================================");
 		// 모든 사각형의 넓이 합 구하기 코드 작성
 		for (int i = 0; i < rList.size(); i++) {
-			sum += rect.area();
+			sum += rList.get(i).area();
 		}
 
 		// 모든 사각형의 합 출력
@@ -56,8 +55,9 @@ public class RecListApp {
 
 		// 내용작성
 		for (int i = 0; i < list.size(); i++) {
-			Rectangle rect = list.get(i);
-			rect.draw();
+//			Rectangle rect = list.get(i);
+//			rect.draw();
+			list.get(i).draw();
 		}
 
 	}
