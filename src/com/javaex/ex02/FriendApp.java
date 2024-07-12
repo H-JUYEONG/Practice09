@@ -33,12 +33,10 @@ public class FriendApp {
 		}
 
 		for (int i = 0; i < fArray.size(); i++) {
-			Friend friend = fArray.get(i);
-			friend.showInfo();
+			fArray.get(i).showInfo();
 		}
 
 		sc.close();
 
 	}
-
 }
