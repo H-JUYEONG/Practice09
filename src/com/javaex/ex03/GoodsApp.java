@@ -20,12 +20,6 @@ public class GoodsApp {
 			if (info.equals("q")) {
 				System.out.println("[입력완료]");
 				System.out.println("===================");
-				for (int i = 0; i < aArray.size(); i++) {
-					// Goods product = aArray.get(i);
-					// product.showInfo();
-					aArray.get(i).showInfo();
-				}
-				System.out.println("모든 상품의 갯수는 " + sum + "개입니다.");
 				break;
 			}
 
@@ -42,6 +36,13 @@ public class GoodsApp {
 			aArray.add(goods);
 			sum += count;
 		}
+
+		for (int i = 0; i < aArray.size(); i++) {
+			// Goods product = aArray.get(i);
+			// product.showInfo();
+			aArray.get(i).showInfo();
+		}
+		System.out.println("모든 상품의 갯수는 " + sum + "개입니다.");
 
 		sc.close();
 
